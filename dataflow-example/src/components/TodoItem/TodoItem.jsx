@@ -1,3 +1,5 @@
+import './TodoItem.css';
+
 // props tar emot datan som skickas in i komponenten
 function TodoItem(props) {
     const { task, done } = props; // Här använder vi oss av "object destructering" där vi plockar ut egenskapen task från objektet props
@@ -8,7 +10,7 @@ function TodoItem(props) {
     }
 
     return (
-        <li>{ task } - { doneText }</li>
+        <li className={`todo-item ${ done ? 'done' : ''}`} >{ task } - { doneText }</li>
     )
 }
 

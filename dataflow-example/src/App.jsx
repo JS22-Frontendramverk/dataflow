@@ -6,7 +6,7 @@ function App() {
 
   return (
     <div className="App">
-      <ul>
+      <ul className='todos'>
         <TodoItem task="Köp kaffe" done={ true } />
         <TodoItem task="Köp kaka"  done={ false } />
         <TodoItem task="Brygg kaffe" done={ false } />
